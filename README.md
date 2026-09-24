@@ -57,14 +57,14 @@ If the version is `v0.4.0`, it means version v0.4.0 or earlier.
 These are old implementations used internally by TIER IV.
 Please use [AD API](https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-architecture-v1/interfaces/ad-api/) instead.
 
-| EOL     | Type    | Name                                                                                                                               | Migration Guide                                                  |
-| ------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 2026/09 | service | [/api/external/set/initialize_pose](./doc/api/external/set/initialize_pose.md)                                                     | [Migrate to Localization API](./doc/migration/localization.md)   |
-| 2026/09 | topic   | [/api/external/get/hazard_status](./doc/api/external/get/hazard_status.md)                                                         | [Migrate to Diagnostics API](./doc/migration/diagnostics.md)     |
-| v0.4.4  | service | [/api/external/set/emergency](./doc/api/external/set/emergency.md)                                                                 | [Migrate to Fail-safe API](./doc/migration/fail-safe.md)         |
-| v0.4.4  | topic   | [/api/external/get/emergency](./doc/api/external/get/emergency.md)                                                                 | [Migrate to Fail-safe API](./doc/migration/fail-safe.md)         |
-| v0.4.4  | topic   | [/api/iv_msgs/planning/scenario_planning/trajectory](./doc/api/iv_msgs/planning/scenario_planning/trajectory.md)                   | [Migrate to Evaluation Interface](./doc/migration/evaluation.md) |
-| v0.4.4  | topic   | [/api/iv_msgs/perception/object_recognition/tracking/objects](./doc/api/iv_msgs/perception/object_recognition/tracking/objects.md) | [Migrate to Evaluation Interface](./doc/migration/evaluation.md) |
+| EOL    | Type    | Name                                                                                                                               | Migration Guide                                                  |
+| ------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| T.B.D. | service | [/api/external/set/initialize_pose](./doc/api/external/set/initialize_pose.md)                                                     | [Migrate to Localization API](./doc/migration/localization.md)   |
+| T.B.D. | topic   | [/api/external/get/hazard_status](./doc/api/external/get/hazard_status.md)                                                         | [Migrate to Diagnostics API](./doc/migration/diagnostics.md)     |
+| T.B.D. | service | [/api/external/set/emergency](./doc/api/external/set/emergency.md)                                                                 | [Migrate to Fail-safe API](./doc/migration/fail-safe.md)         |
+| T.B.D. | topic   | [/api/external/get/emergency](./doc/api/external/get/emergency.md)                                                                 | [Migrate to Fail-safe API](./doc/migration/fail-safe.md)         |
+| T.B.D. | topic   | [/api/iv_msgs/planning/scenario_planning/trajectory](./doc/api/iv_msgs/planning/scenario_planning/trajectory.md)                   | [Migrate to Evaluation Interface](./doc/migration/evaluation.md) |
+| T.B.D. | topic   | [/api/iv_msgs/perception/object_recognition/tracking/objects](./doc/api/iv_msgs/perception/object_recognition/tracking/objects.md) | [Migrate to Evaluation Interface](./doc/migration/evaluation.md) |
 
 ## Removed API
 
