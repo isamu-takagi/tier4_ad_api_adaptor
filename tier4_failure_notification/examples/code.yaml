@@ -1,0 +1,10 @@
+notifications:
+  /autoware/localization/state:
+    failures:
+      - condition: "True"
+        code: LOC-001
+
+  /autoware/planning/routing/state:
+    failures:
+      - condition: LocalizationState(Initialized)
+        code: PLN-001

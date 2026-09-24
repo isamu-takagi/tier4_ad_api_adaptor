@@ -3,7 +3,10 @@
   <arg name="launch_api_0_4_3" default="false" description="Launch APIs with an EOL of v0.4.3."/>
   <arg name="launch_api_0_4_4" default="true" description="Launch APIs with an EOL of v0.4.4."/>
 
+  <arg name="failure_notification_error_file" default="$(find-pkg-share tier4_failure_notification)/examples/code.yaml"/>
+
   <let name="use_agnocast" value="$(env ENABLE_AGNOCAST 0)"/>
+
   <!-- Set `ld_preload_value`. This env launch is used regardless of using agnocast or not -->
   <include file="$(find-pkg-share autoware_agnocast_wrapper)/launch/agnocast_env.launch.py"/>
 
@@ -77,6 +80,8 @@
 
   <!-- failure notification -->
   <group>
-    <include file="$(find-pkg-share tier4_failure_notification)/launch/failure_notification.launch.xml"/>
+    <include file="$(find-pkg-share tier4_failure_notification)/launch/failure_notification.launch.xml">
+      <arg name="error_file" value="$(var failure_notification_error_file)"/>
+    </include>
   </group>
 </launch>
