@@ -84,4 +84,9 @@
       <arg name="error_file" value="$(var failure_notification_error_file)"/>
     </include>
   </group>
+
+  <!-- monitoring -->
+  <group>
+    <include file="$(find-pkg-share tier4_monitoring)/launch/monitoring.launch.xml"/>
+  </group>
 </launch>
