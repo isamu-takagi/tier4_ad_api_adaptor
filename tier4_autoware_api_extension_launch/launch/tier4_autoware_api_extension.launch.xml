@@ -1,7 +1,6 @@
 <launch>
   <!-- For API EOL information, see https://github.com/tier4/tier4_ad_api_adaptor -->
   <arg name="launch_api_0_4_3" default="false" description="Launch APIs with an EOL of v0.4.3."/>
-  <arg name="launch_api_0_4_4" default="true" description="Launch APIs with an EOL of v0.4.4."/>
 
   <arg name="failure_notification_error_file" default="$(find-pkg-share tier4_failure_notification)/examples/code.yaml"/>
 
@@ -35,7 +34,6 @@
     <push-ros-namespace namespace="autoware_api"/>
     <include file="$(find-pkg-share autoware_iv_external_api_adaptor)/launch/external_api_adaptor.launch.py">
       <arg name="launch_api_0_4_3" value="$(var launch_api_0_4_3)"/>
-      <arg name="launch_api_0_4_4" value="$(var launch_api_0_4_4)"/>
     </include>
   </group>
 
