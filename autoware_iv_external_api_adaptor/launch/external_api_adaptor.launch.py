@@ -134,7 +134,6 @@ def launch_setup(context, *args, **kwargs):
     )
     loader_0_4_4 = LoadComposableNodes(
         target_container=Namespace("/", "external/autoware_iv_adaptor"),
-        condition=IfCondition(LaunchConfiguration("launch_api_0_4_4")),
         composable_node_descriptions=[
             _create_api_node("emergency", "Emergency"),
         ],
@@ -146,7 +145,6 @@ def generate_launch_description():
     return launch.LaunchDescription(
         [
             DeclareLaunchArgument("launch_api_0_4_3", default_value="false"),
-            DeclareLaunchArgument("launch_api_0_4_4", default_value="false"),
             _get_agnocast_env(),
             OpaqueFunction(function=launch_setup),
         ]
