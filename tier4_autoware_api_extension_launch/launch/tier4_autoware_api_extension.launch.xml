@@ -78,6 +78,7 @@
 
   <!-- failure notification -->
   <group>
+    <push-ros-namespace namespace="tier4_api"/>
     <include file="$(find-pkg-share tier4_failure_notification)/launch/failure_notification.launch.xml">
       <arg name="error_file" value="$(var failure_notification_error_file)"/>
     </include>
@@ -85,6 +86,7 @@
 
   <!-- monitoring -->
   <group>
+    <push-ros-namespace namespace="tier4_api"/>
     <include file="$(find-pkg-share tier4_monitoring)/launch/monitoring.launch.xml"/>
   </group>
 </launch>
